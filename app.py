@@ -12,6 +12,8 @@ df = pd.read_csv('athlete_events.csv')
 region_df = pd.read_csv('noc_regions.csv')
 
 df = helper.preprocess(df, region_df)
+st.set_page_config(layout="wide")
+
 
 st.sidebar.title('Olympics Analysis')
 st.sidebar.image("https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRq0OOvJprk26JL9x_rG0PJRqQKAtqMy55VTg&s")
